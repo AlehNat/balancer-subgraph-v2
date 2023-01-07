@@ -282,7 +282,7 @@ baobab:
   network: baobab
   Vault:
     address: "0x96D6795721B6ffDa88169D031b9FD4Dc26e29578"
-    startBlock: 98683492
+    startBlock: 110840200
   InitializableWeightedPoolFactory:
     address: "0xC9C58BD6c6c1CAc12F8A174670BEC9e4C0924181"
     startBlock: 110840200
