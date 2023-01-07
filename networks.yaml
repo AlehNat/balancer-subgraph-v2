@@ -278,3 +278,11 @@ gnosis:
   TempLiquidityBootstrappingPoolFactory:
     address: "0x85a80afee867aDf27B50BdB7b76DA70f1E853062"
     startBlock: 25415236
+baobab:
+  network: baobab
+  Vault:
+    address: "0x96D6795721B6ffDa88169D031b9FD4Dc26e29578"
+    startBlock: 98683492
+  InitializableWeightedPoolFactory:
+    address: "0xC9C58BD6c6c1CAc12F8A174670BEC9e4C0924181"
+    startBlock: 110840200
