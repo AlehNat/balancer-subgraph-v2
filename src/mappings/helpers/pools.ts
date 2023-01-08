@@ -82,9 +82,9 @@ export function getPoolTokens(poolId: Bytes): Bytes[] | null {
     log.warning('Failed to get pool tokens: {}', [poolId.toHexString()]);
     return null;
   }
-
   let tokensValue = tokensCall.value.value0;
   let tokens = changetype<Bytes[]>(tokensValue);
+  log.info('Pool tokens: {}', [tokens.toHexString()]);
 
   return tokens;
 }

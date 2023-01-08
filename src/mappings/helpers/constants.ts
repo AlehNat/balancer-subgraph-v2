@@ -35,6 +35,7 @@ class AddressByNetwork {
   public gnosis: string;
   public bnb: string;
   public dev: string;
+  public baobab: string;
 }
 
 let network: string = dataSource.network();
@@ -47,6 +48,7 @@ let vaultAddressByNetwork: AddressByNetwork = {
   gnosis: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   bnb: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   dev: '0xa0B05b20e511B1612E908dFCeE0E407E22B76028',
+  baobab: '0x96D6795721B6ffDa88169D031b9FD4Dc26e29578',
 };
 
 function forNetwork(addressByNetwork: AddressByNetwork, network: string): Address {
@@ -62,6 +64,8 @@ function forNetwork(addressByNetwork: AddressByNetwork, network: string): Addres
     return Address.fromString(addressByNetwork.bnb);
   } else if (network == 'bsc') {
     return Address.fromString(addressByNetwork.bnb);
+  } else if (network == 'baobab') {
+    return Address.fromString(addressByNetwork.baobab);
   } else {
     return Address.fromString(addressByNetwork.dev);
   }
